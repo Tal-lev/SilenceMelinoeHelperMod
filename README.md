@@ -1,4 +1,4 @@
-# MelinoeCallsForAid
+# SilenceMelinoeHelperMod
 
 A Helper mod that does nothing on its own.
 The tag CurrentRun.Hero.SilenceMelinoe mutes Melinoe's quips 
