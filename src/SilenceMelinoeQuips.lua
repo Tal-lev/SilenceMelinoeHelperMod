@@ -754,8 +754,8 @@ AddSilenceGameStateReq(EnemyData.Eris.BossKillVoiceLines[4])
 AddSilenceGameStateReq(EnemyData.FishmanMelee.EnemySightedVoiceLines)
 --EnemyData_FishmanRanged
 AddSilenceGameStateReq(EnemyData.FishmanRanged.EnemySightedVoiceLines)
---EnemyData_FishmanSwarmer
-AddSilenceGameStateReq(EnemyData.FishmanSwarmer.EnemySightedVoiceLines)
+--EnemyData_FishSwarmer
+AddSilenceGameStateReq(EnemyData.FishSwarmer.EnemySightedVoiceLines)
 --EnemyData_GoldElemental
 AddSilenceGameStateReq(EnemyData.GoldElemental.EnemySightedVoiceLines)
 --EnemyData_Harpy
