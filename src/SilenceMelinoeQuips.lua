@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/957")
+print("Starting AddSilenceGameStateReq 0/967")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1094,5 +1094,27 @@ AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.EntranceVoiceLines[4])
 AddSilenceGameStateReq(EnemyData.NPC_Hermes_01.InteractVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.HermesFirstSpawnVoiceLines[2][2])
 --NPCData_Hypnos --Continue here search /VO/Melinoe
---NPCData_Icarus --Continue here search /VO/Melinoe
+--NPCData_Icarus
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.KillingEnemyVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.MissingDistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.UpgradeMenuOpenVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.UpgradeMenuOpenVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterStartVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterStartVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterStartVoiceLines[4])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterEndVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterEndVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.ExitVoiceLines[2])
+--NPCData_Medea --Continue here search /VO/Melinoe
 print("Finished AddSilenceGameStateReq 964/964")
+
+
+
+--For Zagreus Journey Compatibility
+--modutil.mod.Path.Wrap("DoPatches", function(baseFunc)
+--    if rom.mods['NikkelM-Zagreus_Journey'] then
+--    
+--    end
+--    baseFunc()
+--end)
