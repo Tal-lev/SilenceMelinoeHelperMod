@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/931")
+print("Starting AddSilenceGameStateReq 0/957")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1042,7 +1042,7 @@ AddSilenceGameStateReq(EnemyData.NPC_Athena_01.EncounterEndVoiceLines[3])
 AddSilenceGameStateReq(EnemyData.NPC_Athena_01.InteractVoiceLines[1])
 --NPCData_Charon 
 AddSilenceGameStateReq(EnemyData.NPC_Charon_01.InteractVoiceLines[1])
---NPCData_Chronos --Continue here search /VO/Melinoe
+--NPCData_Chronos
 AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Chronos)
 AddSilenceGameStateReq(GlobalVoiceLines.AnomalyEnteredVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.AnomalyEnteredVoiceLines[3])
@@ -1051,4 +1051,37 @@ AddSilenceGameStateReq(GlobalVoiceLines.ChronosAlertVoiceLines[1][2])
 AddSilenceGameStateReq(GlobalVoiceLines.ChronosAlertVoiceLines[4])
 AddSilenceGameStateReq(GlobalVoiceLines.ChronosAlertVoiceLines[6])
 AddSilenceGameStateReq(GlobalVoiceLines.ChronosAlertVoiceLines[7])
-print("Finished AddSilenceGameStateReq 931/931")
+--NPCData_Circe --Continue here search /VO/Melinoe
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[4])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[5])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[6])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.UpgradeMenuOpenVoiceLines[7])
+AddSilenceGameStateReq(EnemyData.NPC_Circe_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.CirceGreetingLines[1][2])
+AddSilenceGameStateReq(GlobalVoiceLines.CirceGreetingLines[1][3])
+AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Circe[4])
+AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Circe[5])
+AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Circe[6])
+--NPCData_Dionysus 
+AddSilenceGameStateReq(EnemyData.NPC_Dionysus_01.UpgradeMenuOpenVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Dionysus_01.UpgradeMenuOpenVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Dionysus_01.InteractVoiceLines[1])
+--NPCData_Dora --Continue here search /VO/Melinoe
+--NPCData_Echo
+AddSilenceGameStateReq(EnemyData.NPC_Echo_01.UpgradeMenuOpenVoiceLines[1][1])
+AddSilenceGameStateReq(EnemyData.NPC_Echo_01.InteractVoiceLines[1])
+--NPCData_Eris --Continue here search /VO/Melinoe
+--NPCData_Hades
+AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.UpgradeMenuOpenVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.UpgradeMenuOpenVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.UpgradeMenuOpenVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.UpgradeMenuOpenVoiceLines[4])
+AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.UpgradeMenuOpenVoiceLines[5])
+AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Hades_02.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Persephone_01.InteractVoiceLines[1])
+--NPCData_Hecate --Continue here search /VO/Melinoe
+print("Finished AddSilenceGameStateReq 957/957")
