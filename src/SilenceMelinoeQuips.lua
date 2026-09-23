@@ -198,7 +198,7 @@ AddSilenceGameStateReq(HeroVoiceLines.BoonDeactivatedVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.GhostWallInteractionVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.HermesDeliveryVoiceLines[1])
 AddSilenceGameStateReq(HeroVoiceLines.TrialUpgradeTransformedVoiceLines[1])
-AddSilenceGameStateReq(HeroVoiceLines.BiomeTimerAboutToExpireVoiceLines[2])
+AddSilenceGameStateReq(HeroVoiceLines.BiomeTimerAboutToExpireVoiceLines[2]) --Added Chronos
 AddSilenceGameStateReq(HeroVoiceLines.BiomeTimerExpiredVoiceLines[1])
 AddSilenceGameStateReq(HeroVoiceLines.OverlookVoiceLines[1])
 AddSilenceGameStateReq(HeroVoiceLines.OverlookVoiceLines[2])
@@ -291,7 +291,7 @@ AddSilenceGameStateReq(GlobalVoiceLines.TaskBegunVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.TaskBegunVoiceLines[3]) --Add Chronos Quips here
 AddSilenceGameStateReq(GlobalVoiceLines.StartNewRunVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.StartNewRunVoiceLines[3])
-AddSilenceGameStateReq(GlobalVoiceLines.StartNewRunVoiceLines[4]) -- Add Chronos Quips here
+AddSilenceGameStateReq(GlobalVoiceLines.StartNewRunVoiceLines[4]) -- Added Chronos
 AddSilenceGameStateReq(GlobalVoiceLines.StartSurfaceRunVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.StartPostTrueEndingRunIntroVoiceLines)
 AddSilenceGameStateReq(GlobalVoiceLines.StartMiscRunVoiceLines)
@@ -334,8 +334,8 @@ AddSilenceGameStateReq(GlobalVoiceLines.StartNewPackagedBountyVoiceLines[1][4])
 AddSilenceGameStateReq(GlobalVoiceLines.StartNewPackagedBountyVoiceLines[1][5])
 AddSilenceGameStateReq(GlobalVoiceLines.CombatBeginsVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.CombatBeginsVoiceLines[2])
-AddSilenceGameStateReq(GlobalVoiceLines.KillingEnemyVoiceLines[1])
-AddSilenceGameStateReq(GlobalVoiceLines.KillingEnemyVoiceLines[7])
+AddSilenceGameStateReq(GlobalVoiceLines.KillingEnemyVoiceLines[1]) --Added Chronos
+AddSilenceGameStateReq(GlobalVoiceLines.KillingEnemyVoiceLines[7]) -- rest
 AddSilenceGameStateReq(GlobalVoiceLines.RevengeKillingEnemyVoiceLines)
 AddSilenceGameStateReq(GlobalVoiceLines.SteamTrapKillVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.OddSheepSightedVoiceLines[1])
@@ -349,7 +349,7 @@ AddSilenceGameStateReq(GlobalVoiceLines.ReturnedFromElysiumVoiceLines)
 AddSilenceGameStateReq(GlobalVoiceLines.MonstersSightedVoiceLines)
 AddSilenceGameStateReq(GlobalVoiceLines.CombatResolvedVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.CombatResolvedVoiceLines[3])
-AddSilenceGameStateReq(GlobalVoiceLines.CombatResolvedLowHealthVoiceLines[2])
+AddSilenceGameStateReq(GlobalVoiceLines.CombatResolvedLowHealthVoiceLines[2]) -- Added Chronos
 AddSilenceGameStateReq(GlobalVoiceLines.BarelySurvivedBossFightVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.DreamRunFinalBossGreetingVoiceLines)
 AddSilenceGameStateReq(GlobalVoiceLines.CatFamiliarBossFightLastHitVoiceLines[1])
@@ -533,7 +533,7 @@ AddSilenceGameStateReq(GlobalVoiceLines.MiscWeaponEquipVoiceLines[7])
 AddSilenceGameStateReq(GlobalVoiceLines.MiscWeaponEquipVoiceLines[8])
 AddSilenceGameStateReq(GlobalVoiceLines.SwitchedWeaponUpgradeVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.SwitchedWeaponUpgradeVoiceLines[3])
-AddSilenceGameStateReq(GlobalVoiceLines.FamiliarEquipVoiceLines[1]) --Added Chronos quips
+AddSilenceGameStateReq(GlobalVoiceLines.FamiliarEquipVoiceLines[1]) --Added Chronos
 AddSilenceGameStateReq(GlobalVoiceLines.FamiliarPostTreatVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.FamiliarPostTreatVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.FamiliarPostTreatVoiceLines[3])
