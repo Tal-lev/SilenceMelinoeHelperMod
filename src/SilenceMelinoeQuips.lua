@@ -1084,4 +1084,15 @@ AddSilenceGameStateReq(EnemyData.NPC_Hades_Field_01.InteractVoiceLines[1])
 AddSilenceGameStateReq(EnemyData.NPC_Hades_02.InteractVoiceLines[1])
 AddSilenceGameStateReq(EnemyData.NPC_Persephone_01.InteractVoiceLines[1])
 --NPCData_Hecate --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 957/957")
+--NPCData_Heracles
+AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.GiftTextLineSets.HeraclesBathHouseRepeatable01[1])
+AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.EntranceVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.EntranceVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.EntranceVoiceLines[4])
+--NPCData_Hermes
+AddSilenceGameStateReq(EnemyData.NPC_Hermes_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.HermesFirstSpawnVoiceLines[2][2])
+--NPCData_Hypnos --Continue here search /VO/Melinoe
+--NPCData_Icarus --Continue here search /VO/Melinoe
+print("Finished AddSilenceGameStateReq 964/964")
