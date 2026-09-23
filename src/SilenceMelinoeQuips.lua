@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/967")
+print("Starting AddSilenceGameStateReq 0/991")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1106,8 +1106,27 @@ AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterStartVoiceLines[4])
 AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterEndVoiceLines[2])
 AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.EncounterEndVoiceLines[3])
 AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.ExitVoiceLines[2])
---NPCData_Medea --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 964/964")
+--NPCData_Medea
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[4])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[5])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[6])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.UpgradeMenuOpenVoiceLines[7])
+AddSilenceGameStateReq(EnemyData.NPC_Medea_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.MedeaGreetingLines[3])
+AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Medea[2])
+AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Medea[3])
+--NPCData_Moros --Continue here search /VO/Melinoe
+--NPCData_Narcissus
+AddSilenceGameStateReq(EnemyData.NPC_Narcissus_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Narcissus_01.UpgradeMenuOpenVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Narcissus_01.UpgradeMenuOpenVoiceLines[2])
+AddSilenceGameStateReq(GlobalVoiceLines.NarcissusGreetingLines[2])
+AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Narcissus[3])
+--NPCData_Nemesis--Continue here search /VO/Melinoe
+print("Finished AddSilenceGameStateReq 991/991")
 
 
 
