@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/991")
+print("Starting AddSilenceGameStateReq 0/1010")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1125,8 +1125,53 @@ AddSilenceGameStateReq(EnemyData.NPC_Narcissus_01.UpgradeMenuOpenVoiceLines[1])
 AddSilenceGameStateReq(EnemyData.NPC_Narcissus_01.UpgradeMenuOpenVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.NarcissusGreetingLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.MiscEndVoiceLines_Narcissus[3])
---NPCData_Nemesis--Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 991/991")
+--NPCData_Nemesis
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.SpawnVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.SpawnVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.SpawnVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.SpawnVoiceLines[5])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.EncounterStartVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.MissingDistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.EncounterWonBigVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.EncounterLostVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.GivingItemVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.GivingItemVoiceLines[5])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.DealApprovedVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.HitAcceptedVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.PlayerWonDamageContestVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.PlayerWonDamageContestBigVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[3])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[4])
+AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
+--NPCData_Odysseus --Continue here search /VO/Melinoe
+--NPCData_Selene --Continue here search /VO/Melinoe
+--NPCData_Skelly --Continue here search /VO/Melinoe
+--NPCData --Continue here search /VO/Melinoe
+--ObstacleData --Continue here search /VO/Melinoe
+--ObstacleDataH --Continue here search /VO/Melinoe
+--ObstacleDataI --Continue here search /VO/Melinoe
+--ObstacleDataN --Continue here search /VO/Melinoe
+--ObstacleDataP --Continue here search /VO/Melinoe
+--ObstacleDataQ --Continue here search /VO/Melinoe
+
+
+--ResourceData --Continue here search /VO/Melinoe
+--RewardData --Continue here search /VO/Melinoe
+--RoomDataC --Continue here search /VO/Melinoe
+--RoomDataChaos --Continue here search /VO/Melinoe
+--RoomDataDream --Continue here search /VO/Melinoe
+--RoomDataF --Continue here search /VO/Melinoe
+--RoomDataG --Continue here search /VO/Melinoe
+--RoomDataH --Continue here search /VO/Melinoe
+--RoomDataI --Continue here search /VO/Melinoe
+--RoomDataN --Continue here search /VO/Melinoe
+--RoomDataO --Continue here search /VO/Melinoe
+--RoomDataP --Continue here search /VO/Melinoe
+--RoomDataQ --Continue here search /VO/Melinoe
+--ShrineData --Continue here search /VO/Melinoe
+print("Finished AddSilenceGameStateReq 1010/1010")
 
 
 
