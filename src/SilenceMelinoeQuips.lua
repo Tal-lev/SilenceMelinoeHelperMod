@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1010")
+print("Starting AddSilenceGameStateReq 0/1088")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1164,18 +1164,92 @@ AddSilenceGameStateReq(RewardData.ClockworkGoal.SetupFunctionArgs.DistanceTrigge
 AddSilenceGameStateReq(RoomData.C_Boss01.ObstacleData[543023].SetupEvents[1].Args.PostTriggerEvents[1].Args.VoiceLines)
 AddSilenceGameStateReq(RoomData.C_Boss01.InspectPoints[801524].InteractTextLineSets.Inspect_C_Boss01_01.EndVoiceLines)
 AddSilenceGameStateReq(RoomData.C_Boss01.InspectPoints[801525].InteractTextLineSets.Inspect_C_Boss01_01.EndVoiceLines)
---RoomDataChaos --Continue here search /VO/Melinoe
---RoomDataDream --Continue here search /VO/Melinoe
---RoomDataF --Continue here search /VO/Melinoe
---RoomDataG --Continue here search /VO/Melinoe
---RoomDataH --Continue here search /VO/Melinoe
+--RoomDataChaos
+AddSilenceGameStateReq(RoomData.BaseChaos.EnterVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Chaos_01.InspectPoints[621957].InteractTextLineSets.Inspect_Chaos_01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.Chaos_02.InspectPoints[622001].InteractTextLineSets.Inspect_Chaos_02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.Chaos_03.InspectPoints[622002].InteractTextLineSets.Inspect_Chaos_03_01.EndVoiceLines)
+--RoomDataDream 
+AddSilenceGameStateReq(RoomData.Dream_Intro.EnterVoiceLines[1])
+--RoomDataF
+AddSilenceGameStateReq(RoomData.F_Opening01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.F_Opening01.InspectPoints[510255].InteractTextLineSets.F_OpeningInspect01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Opening02.InspectPoints[510255].InteractTextLineSets.F_Opening02_Inspect01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Opening03.InspectPoints[567224].InteractTextLineSets.F_Opening03_Inspect01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_MiniBoss01.InspectPoints[584869].InteractTextLineSets.Inspect_F_MiniBoss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_MiniBoss02.InspectPoints[587135].InteractTextLineSets.Inspect_F_MiniBoss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_MiniBoss03.InspectPoints[800455].InteractTextLineSets.Inspect_F_MiniBoss03_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Combat01.DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.F_Combat04.InspectPoints[560954].InteractTextLineSets.Inspect_Cocytus_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Combat11.InspectPoints[587136].InteractTextLineSets.Inspect_VastRiches_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Combat13.InspectPoints[587137].InteractTextLineSets.InspectArtemis01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_PreBoss01.InspectPoints[566373].InteractTextLineSets.Inspect_F_PreBoss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Boss01.InspectPoints[560570].InteractTextLineSets.Inspect_F_Boss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Boss02.InspectPoints[793319].InteractTextLineSets.Inspect_F_Boss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Boss02.InspectPoints[793320].InteractTextLineSets.Inspect_F_Boss02_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_PostBoss01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.F_PostBoss01.EnterVoiceLines[2])
+AddSilenceGameStateReq(RoomData.F_PostBoss01.EnterVoiceLines[3])
+AddSilenceGameStateReq(RoomData.F_PostBoss01.ExitVoiceLines[2])
+AddSilenceGameStateReq(RoomData.F_PostBoss01.InspectPoints[557493].InteractTextLineSets.Inspect_F_PostBoss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Shop01.InspectPoints[561089].InteractTextLineSets.Inspect_F_Shop01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Reprieve01.InspectPoints[560582].InteractTextLineSets.Inspect_F_Reprieve01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Reprieve01.InspectPoints[566419].InteractTextLineSets.Inspect_F_Reprieve01_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.F_Story01.InspectPoints[557845].InteractTextLineSets.Inspect_F_Story01_01.EndVoiceLines[1])
+--RoomDataG
+AddSilenceGameStateReq(RoomData.G_PreBoss01.ObstacleData[617546].DistanceTriggers[2].VoiceLines)
+AddSilenceGameStateReq(RoomData.G_PreBoss01.InspectPoints[560583].InteractTextLineSets.Inspect_G_PreBoss_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.G_PreBoss01.InspectPoints[560583].InteractTextLineSets.Inspect_G_PreBoss_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.G_Boss01.ObstacleData[595279].DistanceTriggers[2].VoiceLines)
+AddSilenceGameStateReq(RoomData.G_PreBoss01.InspectPoints[736957].InteractTextLineSets.Inspect_G_Boss01_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_PreBoss01.InspectPoints[595118].InteractTextLineSets.Inspect_G_Boss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_PreBoss02.InspectPoints[793947].InteractTextLineSets.Inspect_G_Boss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_PreBoss02.InspectPoints[793948].InteractTextLineSets.Inspect_G_Boss02_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_PostBoss01.InspectPoints[557494].InteractTextLineSets.Inspect_G_PostBoss_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_PostBoss01.InspectPoints[637438].InteractTextLineSets.Inspect_G_PostBoss_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_PostBoss01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.G_PostBoss01.ExitVoiceLines[1])
+AddSilenceGameStateReq(RoomData.G_PostBoss01.ExitVoiceLines[2])
+AddSilenceGameStateReq(RoomData.G_Intro.InspectPoints[560583].InteractTextLineSets.Inspect_G_Intro_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.G_Intro.InspectPoints[560583].InteractTextLineSets.Inspect_G_Intro_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.G_Intro.InspectPoints[595117].InteractTextLineSets.Inspect_G_Intro_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_Intro.EnterVoiceLines[3])
+AddSilenceGameStateReq(RoomData.G_Intro.EnterVoiceLines[4])
+AddSilenceGameStateReq(RoomData.G_Shop01.InspectPoints[595121].InteractTextLineSets.Inspect_G_Shop01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_MiniBoss01.InspectPoints[595119].InteractTextLineSets.Inspect_G_MiniBoss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_MiniBoss02.InspectPoints[595120].InteractTextLineSets.Inspect_G_MiniBoss_02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_MiniBoss03.InspectPoints[745536].InteractTextLineSets.Inspect_G_MiniBoss03_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_Reprieve01.InspectPoints[560583].InteractTextLineSets.Inspect_G_Reprieve01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.G_Story01.InspectPoints[595073].InteractTextLineSets.Inspect_G_Story01_01.EndVoiceLines)
+--RoomDataH
+AddSilenceGameStateReq(RoomData.BaseH.EnterVoiceLines)
+AddSilenceGameStateReq(RoomData.BaseH.ExitVoiceLines[1])
+AddSilenceGameStateReq(RoomData.H_Intro.InspectPoints[565615].InteractTextLineSets.Inspect_H_Intro_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Intro.InspectPoints[686629].InteractTextLineSets.Inspect_H_Intro_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Intro.EnterVoiceLines[3])
+AddSilenceGameStateReq(RoomData.H_Bridge01.InspectPoints[702518].InteractTextLineSets.Inspect_H_Bridge_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_MiniBoss01.InspectPoints[722187].InteractTextLineSets.Inspect_H_MiniBoss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_MiniBoss02.InspectPoints[722716].InteractTextLineSets.Inspect_H_MiniBoss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_PreBoss01.InspectPoints[622357].InteractTextLineSets.Inspect_H_PreBoss_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_PreBoss01.InspectPoints[702523].InteractTextLineSets.Inspect_H_PreBoss_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Boss01.InspectPoints[702524].InteractTextLineSets.Inspect_H_Boss_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Boss01.InspectPoints[702525].InteractTextLineSets.Inspect_H_Boss_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Boss01.ExitVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Boss02.InspectPoints[792151].InteractTextLineSets.Inspect_H_Boss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_Boss02.InspectPoints[793949].InteractTextLineSets.Inspect_H_Boss02_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_PostBoss01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.H_PostBoss01.ObstacleData[566246].DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.H_PostBoss01.ObstacleData[566285].DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.H_PostBoss01.InspectPoints[557494].InteractTextLineSets.Inspect_H_PostBoss_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_PostBoss01.InspectPoints[557493].InteractTextLineSets.Inspect_H_PostBoss_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.H_PostBoss01.InspectPoints[566337].InteractTextLineSets.Inspect_H_PostBoss_03.EndVoiceLines)
 --RoomDataI --Continue here search /VO/Melinoe
 --RoomDataN --Continue here search /VO/Melinoe
 --RoomDataO --Continue here search /VO/Melinoe
 --RoomDataP --Continue here search /VO/Melinoe
 --RoomDataQ --Continue here search /VO/Melinoe
 --ShrineData --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1014/1014")
+print("Finished AddSilenceGameStateReq 1088/1088")
 
 
 
