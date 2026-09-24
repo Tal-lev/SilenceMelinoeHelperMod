@@ -1158,8 +1158,12 @@ AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
 
 
 --ResourceData --Continue here search /VO/Melinoe
---RewardData --Continue here search /VO/Melinoe
---RoomDataC --Continue here search /VO/Melinoe
+--RewardData
+AddSilenceGameStateReq(RewardData.ClockworkGoal.SetupFunctionArgs.DistanceTrigger.VoiceLines[1])
+--RoomDataC
+AddSilenceGameStateReq(RoomData.C_Boss01.ObstacleData[543023].SetupEvents[1].Args.PostTriggerEvents[1].Args.VoiceLines)
+AddSilenceGameStateReq(RoomData.C_Boss01.InspectPoints[801524].InteractTextLineSets.Inspect_C_Boss01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.C_Boss01.InspectPoints[801525].InteractTextLineSets.Inspect_C_Boss01_01.EndVoiceLines)
 --RoomDataChaos --Continue here search /VO/Melinoe
 --RoomDataDream --Continue here search /VO/Melinoe
 --RoomDataF --Continue here search /VO/Melinoe
@@ -1171,7 +1175,7 @@ AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
 --RoomDataP --Continue here search /VO/Melinoe
 --RoomDataQ --Continue here search /VO/Melinoe
 --ShrineData --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1010/1010")
+print("Finished AddSilenceGameStateReq 1014/1014")
 
 
 
