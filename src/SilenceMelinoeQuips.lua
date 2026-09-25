@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1163")
+print("Starting AddSilenceGameStateReq 0/1183")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1181,7 +1181,25 @@ AddSilenceGameStateReq(ObstacleData.FieldsRewardFinder.DistanceTrigger.VoiceLine
 AddSilenceGameStateReq(ObstacleData.CWDoor01.DistanceTrigger.VoiceLines[1])
 AddSilenceGameStateReq(ObstacleData.ChronosRemains.OnHitVoiceLines)
 --ObstacleDataN --Continue here search /VO/Melinoe
---ObstacleDataP --Continue here search /VO/Melinoe
+--ObstacleDataP
+AddSilenceGameStateReq(ObstacleData.OlympusCharoncrow01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceAthena01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceDionysus01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceAres.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceHaephestus01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceAphrodite01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceArtemis01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceApollo01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceHermes01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceDemeter01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalacePoseidon01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceHestia01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceZeus01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.OlympusPalaceHera01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.StatueTrap_Zeus.InteractVoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.StatueTrap_Hestia.InteractVoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.StatueTrap_Demeter.InteractVoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.StatueTrap_Poseidon.InteractVoiceLines[1])
 --ObstacleDataQ
 AddSilenceGameStateReq(ObstacleData.TyphonExitDoor.OnUsedPresentationFunctionArgs.ThreadedVoiceLines)
 
@@ -1343,7 +1361,7 @@ AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[3][1])
 --WeaponShopData  --Continue here search /VO/Melinoe
 --WeaponUpgradeData  --Continue here search /VO/Melinoe
 --WorldUpgradeData  --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1165/1165")
+print("Finished AddSilenceGameStateReq 1183/1183")
 
 
 
