@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1183")
+print("Starting AddSilenceGameStateReq 0/1191")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1180,7 +1180,15 @@ AddSilenceGameStateReq(ObstacleData.FieldsRewardFinder.DistanceTrigger.VoiceLine
 --ObstacleDataI
 AddSilenceGameStateReq(ObstacleData.CWDoor01.DistanceTrigger.VoiceLines[1])
 AddSilenceGameStateReq(ObstacleData.ChronosRemains.OnHitVoiceLines)
---ObstacleDataN --Continue here search /VO/Melinoe
+--ObstacleDataN
+AddSilenceGameStateReq(ObstacleData.EphyraExitDoor.ExitBlockedVoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.EphyraExitBossDoor.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.EphyraExitBossDoor.OnUsedPresentationFunctionArgs.ThreadedVoiceLines)
+AddSilenceGameStateReq(ObstacleData.EphyraExitBossDoor.ExitBlockedVoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.EphyraHubExitBarrier.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.EphyraHubExitBarrier.DistanceTrigger.VoiceLines[2])
+AddSilenceGameStateReq(ObstacleData.SurfaceShop.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.EphyraZoomObject.DistanceTrigger.VoiceLines)
 --ObstacleDataP
 AddSilenceGameStateReq(ObstacleData.OlympusCharoncrow01.DistanceTrigger.VoiceLines[1])
 AddSilenceGameStateReq(ObstacleData.OlympusPalaceAthena01.DistanceTrigger.VoiceLines[1])
@@ -1361,7 +1369,7 @@ AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[3][1])
 --WeaponShopData  --Continue here search /VO/Melinoe
 --WeaponUpgradeData  --Continue here search /VO/Melinoe
 --WorldUpgradeData  --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1183/1183")
+print("Finished AddSilenceGameStateReq 1191/1191")
 
 
 
