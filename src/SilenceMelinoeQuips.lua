@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1191")
+print("Starting AddSilenceGameStateReq 0/1277")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1211,15 +1211,100 @@ AddSilenceGameStateReq(ObstacleData.StatueTrap_Poseidon.InteractVoiceLines[1])
 --ObstacleDataQ
 AddSilenceGameStateReq(ObstacleData.TyphonExitDoor.OnUsedPresentationFunctionArgs.ThreadedVoiceLines)
 
---PresentationBiomeG --Continue here search /VO/Melinoe
---PresentationBiomeH --Continue here search /VO/Melinoe
---PresentationBiomeI --Continue here search /VO/Melinoe
---PresentationBiomeP --Continue here search /VO/Melinoe
+--PresentationBiomeG
+AddSilenceGameStateReq(GlobalVoiceLines.AcquireMixerForCirceQuestVoiceLines)
+--PresentationBiomeH
+AddSilenceGameStateReq(GlobalVoiceLines.AcquireMixerForMedeaQuestVoiceLines)
+--PresentationBiomeI
+AddSilenceGameStateReq(GlobalVoiceLines.GigarosFoundVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.SanctumToBedroomVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.FamilyEntranceVoiceLines[2])
+AddSilenceGameStateReq(GlobalVoiceLines.FamilyUnfrozenVoiceLines[2])
+AddSilenceGameStateReq(GlobalVoiceLines.TimeToGoVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.ChronosExitReactionVoiceLines[1])
 --PresentationBiomeQ --Continue here search /VO/Melinoe
---ProjectileData_Gods --Continue here search /VO/Melinoe
---ProjectileData_Traps --Continue here search /VO/Melinoe
+--ProjectileData_Gods
+AddSilenceGameStateReq(ProjectileData.ZeusCastStrike.KillingEnemyVoiceLines)
+--ProjectileData_Traps
+AddSilenceGameStateReq(ProjectileData.RubbleFall.KillingEnemyVoiceLines[1])
+AddSilenceGameStateReq(ProjectileData.FieldsDestructiblePillarDestruction.KillingEnemyVoiceLines)
 --QuestData --Continue here search /VO/Melinoe
---ResourceData --Continue here search /VO/Melinoe
+--ResourceData
+AddSilenceGameStateReq(ResourceData.MixerFBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerGBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerHBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerIBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerNBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerOBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerPBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerQBoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerQBoss.OnAddVoiceLines[2])
+AddSilenceGameStateReq(ResourceData.PlantFMoly.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantGLotus.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantHMyrtle.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantIShaderot.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantNMoss.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.PlantNMoss.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantNMoss.OnAddVoiceLines[2])
+AddSilenceGameStateReq(ResourceData.PlantODriftwood.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantPIris.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantQFang.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantFNightshadeSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantFNightshade.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantGCattailSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantHWheatSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantHWheat.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantIPoppySeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantIPoppy.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantNGarlicSeed.OnAddVoiceLines[2])
+AddSilenceGameStateReq(ResourceData.PlantNGarlic.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantOMandrakeSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantOMandrake.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantPOliveSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantPOlive.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantQSnakereedSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantQSnakereed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantChaosThalamusSeed.InventoryVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantChaosThalamusSeed.InventoryVoiceLines[2])
+AddSilenceGameStateReq(ResourceData.PlantChaosThalamusSeed.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantChaosThalamus.InventoryVoiceLines.InventoryVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.PlantChaosThalamus.InventoryVoiceLines.InventoryVoiceLines[2])
+AddSilenceGameStateReq(ResourceData.PlantChaosThalamus.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreFSilver.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreGLime.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreHGlassrock.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreIMarble.InventoryVoiceLines[2])
+AddSilenceGameStateReq(ResourceData.OreNBronze.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.OreNBronze.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreOIron.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OrePAdamant.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreQScales.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.OreChaosProtoplasm.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MetaCurrency.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.InventoryVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.OnAddVoiceLines[3])
+AddSilenceGameStateReq(ResourceData.MemPointsCommon.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.MetaFabric.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.CardUpgradePoints.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.GiftPoints.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.GiftPointsRare.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.GiftPointsEpic.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.HadesSpearPoints.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.DeathAreaPoints.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.WeaponPointsRare.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.Mixer5Common.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.Mixer6Common.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerShadow.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.MixerShadow.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.MixerMythic.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.MixerMythic.OnAddVoiceLines)
+AddSilenceGameStateReq(ResourceData.FamiliarPoints.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.SuperGiftPoints.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.CharonPoints.InventoryVoiceLines)
+AddSilenceGameStateReq(ResourceData.GemPoints.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.DreamPoints.OnAddVoiceLines[1])
+AddSilenceGameStateReq(ResourceData.TrashPoints.OnAddVoiceLines[1])
 --RewardData
 AddSilenceGameStateReq(RewardData.ClockworkGoal.SetupFunctionArgs.DistanceTrigger.VoiceLines[1])
 --RoomDataC
@@ -1369,7 +1454,7 @@ AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[3][1])
 --WeaponShopData  --Continue here search /VO/Melinoe
 --WeaponUpgradeData  --Continue here search /VO/Melinoe
 --WorldUpgradeData  --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1191/1191")
+print("Finished AddSilenceGameStateReq 1277/1277")
 
 
 
