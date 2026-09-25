@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1136")
+print("Starting AddSilenceGameStateReq 0/1163")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1149,14 +1149,50 @@ AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
 --NPCData_Selene --Continue here search /VO/Melinoe
 --NPCData_Skelly --Continue here search /VO/Melinoe
 --NPCData --Continue here search /VO/Melinoe
---ObstacleData --Continue here search /VO/Melinoe
---ObstacleDataH --Continue here search /VO/Melinoe
---ObstacleDataI --Continue here search /VO/Melinoe
+--ObstacleData
+AddSilenceGameStateReq(ObstacleData.ExitDoor.ExitBlockedVoiceLines[8])
+AddSilenceGameStateReq(ObstacleData.ExitDoor.ExitBlockedVoiceLines[9])
+AddSilenceGameStateReq(ObstacleData.BaseBreakable.BreakableValueOptions.SetupEvents[1].Args.PostTriggerEvents[1].Args.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.GiftRack.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.GiftRack.DistanceTrigger.VoiceLines[2])
+AddSilenceGameStateReq(ObstacleData.ChallengeSwitch.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.PerfectClearSwitch.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.EliteChallengeSwitch.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.WellShop.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.SellTraitShop.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.MetaRewardStand.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.MetaRewardStand.ExitBlockedVoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.ZagContract.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.SecretDoor.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.TrialUpgrade.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.PickaxePoint.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.CrossroadsFamilyPortrait02.DistanceTrigger.VoiceLines)
+--ObstacleDataH
+AddSilenceGameStateReq(ObstacleData.FieldsExitDoor.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.FieldsExitDoor.ExitBlockedVoiceLines[1][1])
+AddSilenceGameStateReq(ObstacleData.FieldsExitDoor.ExitBlockedVoiceLines[1][2])
+AddSilenceGameStateReq(ObstacleData.FieldsStatueHead02.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.FieldsBossExitDoor.DistanceTrigger.VoiceLines)
+AddSilenceGameStateReq(ObstacleData.FieldsTerrainGoldenLeaves01a.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.FieldsRewardCage.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.FieldsRewardCage.DistanceTrigger.VoiceLines[2])
+AddSilenceGameStateReq(ObstacleData.FieldsRewardFinder.DistanceTrigger.VoiceLines[1])
+--ObstacleDataI
+AddSilenceGameStateReq(ObstacleData.CWDoor01.DistanceTrigger.VoiceLines[1])
+AddSilenceGameStateReq(ObstacleData.ChronosRemains.OnHitVoiceLines)
 --ObstacleDataN --Continue here search /VO/Melinoe
 --ObstacleDataP --Continue here search /VO/Melinoe
---ObstacleDataQ --Continue here search /VO/Melinoe
+--ObstacleDataQ
+AddSilenceGameStateReq(ObstacleData.TyphonExitDoor.OnUsedPresentationFunctionArgs.ThreadedVoiceLines)
 
-
+--PresentationBiomeG --Continue here search /VO/Melinoe
+--PresentationBiomeH --Continue here search /VO/Melinoe
+--PresentationBiomeI --Continue here search /VO/Melinoe
+--PresentationBiomeP --Continue here search /VO/Melinoe
+--PresentationBiomeQ --Continue here search /VO/Melinoe
+--ProjectileData_Gods --Continue here search /VO/Melinoe
+--ProjectileData_Traps --Continue here search /VO/Melinoe
+--QuestData --Continue here search /VO/Melinoe
 --ResourceData --Continue here search /VO/Melinoe
 --RewardData
 AddSilenceGameStateReq(RewardData.ClockworkGoal.SetupFunctionArgs.DistanceTrigger.VoiceLines[1])
@@ -1298,8 +1334,16 @@ AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[9])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][1])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[2][1])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[3][1])
-
-print("Finished AddSilenceGameStateReq 1136/1136")
+--RoomHistoryData  --Continue here search /VO/Melinoe
+--TraitData_Keepsake  --Continue here search /VO/Melinoe
+--WeaponData_InfestedCerberus  --Continue here search /VO/Melinoe
+--WeaponData_Traps  --Continue here search /VO/Melinoe
+--WeaponData_Treant  --Continue here search /VO/Melinoe
+--WeaponDataAllies  --Continue here search /VO/Melinoe
+--WeaponShopData  --Continue here search /VO/Melinoe
+--WeaponUpgradeData  --Continue here search /VO/Melinoe
+--WorldUpgradeData  --Continue here search /VO/Melinoe
+print("Finished AddSilenceGameStateReq 1165/1165")
 
 
 
