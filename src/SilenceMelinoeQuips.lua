@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1124")
+print("Starting AddSilenceGameStateReq 0/1136")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1285,8 +1285,21 @@ AddSilenceGameStateReq(RoomData.I_PostBoss01.EnterVoiceLines[2])
 --RoomDataO --Continue here search /VO/Melinoe
 --RoomDataP --Continue here search /VO/Melinoe
 --RoomDataQ --Continue here search /VO/Melinoe
---ShrineData --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1124/1124")
+--ShrineData
+AddSilenceGameStateReq(GlobalVoiceLines.ShrineUpgradeMaxedVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.ShrineUpgradePickedVoiceLines)
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[1])
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[2])
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[3])
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[4])
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[5])
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[8])
+AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[9])
+AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][1])
+AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[2][1])
+AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[3][1])
+
+print("Finished AddSilenceGameStateReq 1136/1136")
 
 
 
