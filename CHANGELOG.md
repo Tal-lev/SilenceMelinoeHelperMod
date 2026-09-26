@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Silence NPCData (missing a few Crossroads NPC)
+- Silence RoomData
+- Silence ProjectileData
+- Silence WeaponData
+- Silence ShrineData
+- Silence RewardData
+- Silence ObstacleData
+- Silence ResourceData
+
 ## [0.1.0] - 2026-09-23
 
 - First version of the mod!
