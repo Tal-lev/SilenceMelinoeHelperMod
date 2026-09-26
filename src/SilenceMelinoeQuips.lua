@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1318")
+print("Starting AddSilenceGameStateReq 0/1345")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1459,7 +1459,32 @@ AddSilenceGameStateReq(RoomData.N_PostBoss01.EnterVoiceLines[1])
 AddSilenceGameStateReq(RoomData.N_MiniBoss02.EnterVoiceLines)
 AddSilenceGameStateReq(RoomData.N_MiniBoss02.InspectPoints[800454].InteractTextLineSets.Inspect_N_MiniBoss02_01.EndVoiceLines[1])
 AddSilenceGameStateReq(RoomData.N_Story01.InspectPoints[557999].InteractTextLineSets.Inspect_N_Story_01_01.EndVoiceLines[1])
---RoomDataO --Continue here search /VO/Melinoe
+--RoomDataO
+AddSilenceGameStateReq(RoomData.BaseO.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Intro.ObstacleData[691287].DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.O_Intro.ObstacleData[691310].DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.O_Intro.InspectPoints[691446].InteractTextLineSets.Inspect_O_Intro_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Intro.InspectPoints[561084].InteractTextLineSets.Inspect_O_Intro_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Intro.EnterVoiceLines[3])
+AddSilenceGameStateReq(RoomData.O_Shop01.InspectPoints[743811].InteractTextLineSets.Inspect_O_Shop01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_PreBoss01.InspectPoints[743812].InteractTextLineSets.Inspect_O_PreBoss01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_PreBoss01.InspectPoints[743813].InteractTextLineSets.Inspect_O_PreBoss01_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Boss01.InspectPoints[744274].InteractTextLineSets.Inspect_O_Boss01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Boss01.InspectPoints[744273].InteractTextLineSets.Inspect_O_Boss01_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Boss02.InspectPoints[793950].InteractTextLineSets.Inspect_O_Boss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.O_Boss02.InspectPoints[794212].InteractTextLineSets.Inspect_O_Boss02_02.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.O_PostBoss01.InspectPoints[557494].InteractTextLineSets.Inspect_O_PostBoss01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_PostBoss01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_MiniBoss01.InspectPoints[743810].InteractTextLineSets.Inspect_O_MiniBoss01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_MiniBoss01.InspectPoints[743810].InteractTextLineSets.Inspect_O_MiniBoss01_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.O_MiniBoss01.InspectPoints[743811].InteractTextLineSets.Inspect_O_MiniBoss01_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_MiniBoss02.InspectPoints[793020].InteractTextLineSets.Inspect_O_MiniBoss02_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Devotion01.InspectPoints[761006].InteractTextLineSets.Inspect_O_Devotion_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Reprieve01.InspectPoints[695597].InteractTextLineSets.Inspect_O_Reprieve01_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.O_Story01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Story01.ObstacleData[744056].DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.O_Story01.InspectPoints[744051].InteractTextLineSets.Inspect_O_Story01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.O_Story01.InspectPoints[744052].InteractTextLineSets.Inspect_O_Story01_02.EndVoiceLines[1])
 --RoomDataP --Continue here search /VO/Melinoe
 --RoomDataQ --Continue here search /VO/Melinoe
 --RunHistoryData
@@ -1497,7 +1522,7 @@ AddSilenceGameStateReq(WeaponData.ArtemisHuntersMark.AIData.PreAttackVoiceLines[
 --WeaponShopData  --Continue here search /VO/Melinoe
 --WeaponUpgradeData  --Continue here search /VO/Melinoe
 --WorldUpgradeData  --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1318/1318")
+print("Finished AddSilenceGameStateReq 1345/1345")
 
 
 
