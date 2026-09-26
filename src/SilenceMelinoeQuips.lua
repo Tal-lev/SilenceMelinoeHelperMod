@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1367")
+print("Starting AddSilenceGameStateReq 0/1403")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1509,6 +1509,42 @@ AddSilenceGameStateReq(RoomData.P_Story01.InspectPoints[750617].InteractTextLine
 AddSilenceGameStateReq(RoomData.P_MiniBoss01.InspectPoints[744643].InteractTextLineSets.Inspect_P_MiniBoss_01.EndVoiceLines)
 AddSilenceGameStateReq(RoomData.P_MiniBoss02.InspectPoints[775707].InteractTextLineSets.Inspect_P_MiniBoss02_01.EndVoiceLines[1])
 --RoomDataQ --Continue here search /VO/Melinoe
+AddSilenceGameStateReq(RoomData.Q_Intro.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Intro.EnterVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_Intro.EnterVoiceLines[3])
+AddSilenceGameStateReq(RoomData.Q_Intro.InspectPoints[792127].InteractTextLineSets.Inspect_Q_Intro_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Intro.InspectPoints[792127].InteractTextLineSets.Inspect_Q_Intro_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_Intro.InspectPoints[792128].InteractTextLineSets.Inspect_Q_Intro_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Intro.InspectPoints[792129].InteractTextLineSets.Inspect_Q_Intro_03.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Intro.InspectPoints[797654].InteractTextLineSets.Inspect_Q_Intro_04.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_PreBoss01.InspectPoints[792126].InteractTextLineSets.Inspect_Q_PreBoss01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss02.InspectPoints[780392].InteractTextLineSets.Inspect_Q_MiniBoss02_01.EndVoiceLines)
+AddSilenceGameStateReq(RoomData.Q_MiniBoss03.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss03.InspectPoints[792125].InteractTextLineSets.Inspect_Q_MiniBoss03_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss03.InspectPoints[792125].InteractTextLineSets.Inspect_Q_MiniBoss03_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss04.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss04.EnterVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss04.InspectPoints[792783].InteractTextLineSets.Inspect_Q_MiniBoss04_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_MiniBoss05.InspectPoints[792124].InteractTextLineSets.Inspect_Q_MiniBoss05_01.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_Boss01.ExitVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss01.ExitVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_Boss01.InspectPoints[793021].InteractTextLineSets.Inspect_Q_Boss01_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss01.InspectPoints[793022].InteractTextLineSets.Inspect_Q_Boss01_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss01.InspectPoints[797655].InteractTextLineSets.Inspect_Q_Boss01_03.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss01.ObstacleData[779914].DistanceTriggers[1].VoiceLines)
+AddSilenceGameStateReq(RoomData.Q_Boss02.InspectPoints[793952].InteractTextLineSets.Inspect_Q_Boss02_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss02.InspectPoints[793022].InteractTextLineSets.Inspect_Q_Boss02_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss02.InspectPoints[800628].InteractTextLineSets.Inspect_Q_Boss02_03.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Boss02.ExitVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_PostBoss01.ObstacleData[792642].DistanceTriggers[1].VoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_PostBoss01.InspectPoints[798321].InteractTextLineSets.Inspect_Q_PostBoss_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_PostBoss01.InspectPoints[798322].InteractTextLineSets.Inspect_Q_PostBoss_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_PostBoss01.InspectPoints[798322].InteractTextLineSets.Inspect_Q_PostBoss_02.EndVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_PostBoss01.EnterVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_PostBoss01.EnterVoiceLines[2])
+AddSilenceGameStateReq(RoomData.Q_Story01.InspectPoints[798320].InteractTextLineSets.Inspect_Q_Story_01.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Story01.InspectPoints[798321].InteractTextLineSets.Inspect_Q_Story_02.EndVoiceLines[1])
+AddSilenceGameStateReq(RoomData.Q_Story01.EnterVoiceLines[1])
 --RunHistoryData
 AddSilenceGameStateReq(GlobalVoiceLines.OpenedRunHistoryScreenVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.PositiveRunHistoryScreenVoiceLines[1])
@@ -1526,12 +1562,11 @@ AddSilenceGameStateReq(ScreenData.Shrine.OpenVoiceLines[9])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][1][1])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][2][1])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][3][1])
---RoomHistoryData  --Continue here search /VO/Melinoe
 --TraitData_Keepsake  --Continue here search /VO/Melinoe
 --WeaponData_InfestedCerberus
 AddSilenceGameStateReq(WeaponData.InfestedCerberus_C_Breath.AIData.PreAttackVoiceLines[1])
 AddSilenceGameStateReq(WeaponData.InfestedCerberusCirclesP1_Rotating.AIData.PreAttackVoiceLines[1])
-AddSilenceGameStateReq(WeaponData.InfestedCerberusBurrow.AIData.PreAttackVoiceLines[1])
+AddSilenceGameStateReq(WeaponData.InfestedCerberusBurrow.AIData.PreMoveVoiceLines[1])
 AddSilenceGameStateReq(WeaponData.InfestedCerberusUnburrowRadialInvertedCircle.AIData.PreAttackVoiceLines[1])
 AddSilenceGameStateReq(WeaponData.InfestedCerberusMiasmaGeyser.AIData.PreAttackVoiceLines[1])
 --WeaponData_Traps
@@ -1544,7 +1579,7 @@ AddSilenceGameStateReq(WeaponData.ArtemisHuntersMark.AIData.PreAttackVoiceLines[
 --WeaponShopData  --Continue here search /VO/Melinoe
 --WeaponUpgradeData  --Continue here search /VO/Melinoe
 --WorldUpgradeData  --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1367/1367")
+print("Finished AddSilenceGameStateReq 1403/1403")
 
 
 
