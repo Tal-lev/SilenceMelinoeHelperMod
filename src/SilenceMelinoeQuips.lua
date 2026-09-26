@@ -18,7 +18,7 @@ function AddSilenceGameStateReq( ListArg )
 end
 
 --Adding req for not Chronos
-print("Starting AddSilenceGameStateReq 0/1277")
+print("Starting AddSilenceGameStateReq 0/1284")
 AddSilenceGameStateReq(HeroData.LowHealthVoiceLines)
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[1]) 
 AddSilenceGameStateReq(HeroVoiceLines.NotReadyVoiceLines[2])
@@ -1446,14 +1446,21 @@ AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][2][1])
 AddSilenceGameStateReq(ScreenData.Shrine.ChangeMadeCloseVoiceLines[1][3][1])
 --RoomHistoryData  --Continue here search /VO/Melinoe
 --TraitData_Keepsake  --Continue here search /VO/Melinoe
---WeaponData_InfestedCerberus  --Continue here search /VO/Melinoe
---WeaponData_Traps  --Continue here search /VO/Melinoe
---WeaponData_Treant  --Continue here search /VO/Melinoe
+--WeaponData_InfestedCerberus
+AddSilenceGameStateReq(WeaponData.InfestedCerberus_C_Breath.AIData.PreAttackVoiceLines[1])
+AddSilenceGameStateReq(WeaponData.InfestedCerberusCirclesP1_Rotating.AIData.PreAttackVoiceLines[1])
+AddSilenceGameStateReq(WeaponData.InfestedCerberusBurrow.AIData.PreAttackVoiceLines[1])
+AddSilenceGameStateReq(WeaponData.InfestedCerberusUnburrowRadialInvertedCircle.AIData.PreAttackVoiceLines[1])
+AddSilenceGameStateReq(WeaponData.InfestedCerberusMiasmaGeyser.AIData.PreAttackVoiceLines[1])
+--WeaponData_Traps
+AddSilenceGameStateReq(WeaponData.SafeZone.AIData.PreAttackVoiceLines)
+--WeaponData_Treant
+AddSilenceGameStateReq(WeaponData.TreantRangedSpray.AIData.PreAttackVoiceLines)
 --WeaponDataAllies  --Continue here search /VO/Melinoe
 --WeaponShopData  --Continue here search /VO/Melinoe
 --WeaponUpgradeData  --Continue here search /VO/Melinoe
 --WorldUpgradeData  --Continue here search /VO/Melinoe
-print("Finished AddSilenceGameStateReq 1277/1277")
+print("Finished AddSilenceGameStateReq 1284/1284")
 
 
 
