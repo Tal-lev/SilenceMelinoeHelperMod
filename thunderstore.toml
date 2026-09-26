@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "JarlUlsfark"
 name = "SilenceMelinoeHelperMod"
-versionNumber = "0.1.0"
+versionNumber = "0.9.0"
 description = "A helper mod that does nothing on its own. Mutes Melinoe's quips if the tag CurrentRun.Hero.SilenceMelinoe is applied"
 websiteUrl = "https://github.com/Tal-lev/MelinoeCallsForAid"
 containsNsfwContent = false
