@@ -12,7 +12,9 @@ function AddSilenceGameStateReq( ListArg )
             if not value.GameStateRequirements then
                 value.GameStateRequirements = {}
             end
-            table.insert(value.GameStateRequirements, NoChronosReq)
+            if string.sub(value.Cue, 1, 11) == "/VO/Melinoe" then
+		        table.insert(value.GameStateRequirements, NoChronosReq)
+	        end    
         end
     end
 end
@@ -1146,7 +1148,8 @@ AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[3])
 AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[4])
 AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
 --NPCData_Odysseus --Continue here search /VO/Melinoe
---NPCData_Selene --Continue here search /VO/Melinoe
+--NPCData_Selene
+AddSilenceGameStateReq(GlobalVoiceLines.SeleneSaluteLines[1])
 --NPCData_Skelly --Continue here search /VO/Melinoe
 --NPCData --Continue here search /VO/Melinoe
 --ObstacleData
@@ -1581,12 +1584,208 @@ AddSilenceGameStateReq(WeaponData.ArtemisHuntersMark.AIData.PreAttackVoiceLines[
 --WorldUpgradeData  --Continue here search /VO/Melinoe
 print("Finished AddSilenceGameStateReq 1403/1403")
 
+function printTable(t, maxDepth, indent)
+    if type(t) ~= "table" then
+        print(t)
+        return
+    end
+
+    indent = indent or 0
+    maxDepth = maxDepth or 20
+    if indent > maxDepth then
+        print(string.rep("  ", indent) .. "...")
+        return
+    end
+
+    local formatting = string.rep("  ", indent)
+    for k, v in pairs(t) do
+        if type(v) == "table" then
+            print(formatting .. k .. ":")
+            printTable(v, maxDepth, indent + 1)
+        else
+            print(formatting .. k .. ": " .. tostring(v))
+        end
+    end
+end
 
 
 --For Zagreus Journey Compatibility
---modutil.mod.Path.Wrap("DoPatches", function(baseFunc)
---    if rom.mods['NikkelM-Zagreus_Journey'] then
---    
---    end
---    baseFunc()
---end)
+modutil.mod.Path.Wrap("DoPatches", function(baseFunc)
+    if rom.mods['NikkelM-Zagreus_Journey'] then
+        --ZJ_AudioData
+        AddSilenceGameStateReq(HeroVoiceLines.ThanatosSpawningVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ThanatosSpawningVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ThanatosExitReactionVoiceLines)
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_UsedLyreVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_UsedLyreVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_UsedLyreVoiceLines[3])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_UsedLyreVoiceLines[4])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_UsedLyreVoiceLines[5])
+        --Robbing Charon
+        AddSilenceGameStateReq(HeroVoiceLines.ForbiddenShopItemTakenVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ForbiddenShopItemTakenVoiceLines[2])
+        --Caught Robbing Charon
+        AddSilenceGameStateReq(HeroVoiceLines.ForbiddenShopItemCaughtVoiceLines)
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_ElysiumShadeVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_MelinoeDBossExitVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_MelinoeDBossExitVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_MelinoeDBossExitVoiceLines[3])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_RunClearedVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_RunClearedVoiceLines[3])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_RunClearedVoiceLines[4])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_ShrineGateEnterVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_ShrineGateEnterVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[3])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[4])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[5])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[6])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[7])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[8])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[9])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[10])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[11])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[12])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[14])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[15])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[16])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[17])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[18])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[19])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[20])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[21])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[22])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[23])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[24])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[25])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[26])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[27])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[28])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[29])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[30])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[31])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[32])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[33])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[34])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[35])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[36])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[37])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[38])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[39])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[40])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[41])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[42])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[43])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[44])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[45])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[46])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[47])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[48])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[49])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[50])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[51])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[52])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[53])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[54])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[55])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[56])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[57])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[58])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[59])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[60])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[61])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[62])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[63])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[64])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[65])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[66])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[67])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[68])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[69])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[70])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_EnteredDeathAreaVoiceLines[71])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_DeathReturnVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_DeathReturnVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_DeathReturnVoiceLines[3])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_DeathReturnVoiceLines[4])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_DeathReturnVoiceLines[5])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_StartNewHadesRunVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_StartNewHadesRunVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_TrophyLockedVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_TrophyAdmirationVoiceLines[1])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_TrophyAdmirationVoiceLines[2])
+        AddSilenceGameStateReq(HeroVoiceLines.ModsNikkelMHadesBiomes_GiftRackLockedVoiceLines)
+        AddSilenceGameStateReq(HeroVoiceLines.TheseusWrathReactionVoiceLines_F)
+        AddSilenceGameStateReq(HeroVoiceLines.TheseusWrathReactionVoiceLines_M)
+        --ZJ_ConsumableData
+        AddSilenceGameStateReq(ConsumableData.CharonStoreDiscount.ConsumedVoiceLines)
+        AddSilenceGameStateReq(ConsumableData.CharonStoreDiscount.ConsumedVoiceLines[1])
+        --ZJ_CosmeticsData
+--    ZJ_DeathLoopData
+--    ZJ_DreamRunLogic --Done In ZJ commit
+--    ZJ_EnemyData
+        AddSilenceGameStateReq(EnemyData.Harpy.BossKillVoiceLines[4])
+        AddSilenceGameStateReq(EnemyData.Harpy.BossKillVoiceLines[5])
+        AddSilenceGameStateReq(EnemyData.Harpy.BossKillVoiceLines[6])
+        AddSilenceGameStateReq(EnemyData.HadesCrawlerMiniBoss.OnKillVoiceLines[3])
+        AddSilenceGameStateReq(EnemyData.HydraHeadImmortal.BossKillVoiceLines[4])
+        AddSilenceGameStateReq(EnemyData.HadesCrawlerMiniBoss.OnKillVoiceLines[3])
+        AddSilenceGameStateReq(EnemyData.Hades.AssistActivatedVoiceLines[1][2])
+--    ZJ_HadesAudioData
+        --AddSilenceGameStateReq(GlobalVoiceLines.EnteredFuryChamberVoiceLines[2])   
+        --AddSilenceGameStateReq(GlobalVoiceLines.EnteredFuryChamberVoiceLines[3]) 
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomesEnteredHydraChamberVoiceLines[1])
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomesEnteredHydraChamberVoiceLines[2])
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomesEnteredHydraChamberVoiceLines[3])
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomesEnteredHydraChamberVoiceLines[4])
+        AddSilenceGameStateReq(GlobalVoiceLines.EnteredCharonFightVoiceLines[1])
+        AddSilenceGameStateReq(GlobalVoiceLines.EnteredCharonFightVoiceLines[2])
+        AddSilenceGameStateReq(GlobalVoiceLines.SurvivalAboutToStartVoiceLines[1])
+        AddSilenceGameStateReq(GlobalVoiceLines.SurvivalAboutToStartVoiceLines[2])
+        AddSilenceGameStateReq(GlobalVoiceLines.SurvivalStartVoiceLines)
+        AddSilenceGameStateReq(GlobalVoiceLines.SurvivalExpiringVoiceLines)
+        AddSilenceGameStateReq(GlobalVoiceLines.SurvivalResolvedVoiceLines)
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomes_StyxHubForkedPathVoiceLines[1])
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomes_BadgeUpgradedVoiceLines)
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomes_SaluteVoiceLines[1])
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomes_SaluteVoiceLines[2])
+        AddSilenceGameStateReq(GlobalVoiceLines.ModsNikkelMHadesBiomes_SaluteVoiceLines[3])
+
+--    ZJ_FamiliarData
+--    ZJ_RoomData
+        AddSilenceGameStateReq(RoomData.X_PostBoss01.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.X_Shop01.DistanceTriggers[2].VoiceLines)
+        AddSilenceGameStateReq(RoomData.Y_Intro.EnterVoiceLines[2])
+        AddSilenceGameStateReq(RoomData.Y_Boss01.ExitVoiceLines)
+        AddSilenceGameStateReq(RoomData.Y_PostBoss01.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.Y_Shop01.DistanceTriggers[1].VoiceLines)
+        AddSilenceGameStateReq(RoomData.D_Intro.EnterVoiceLines[2])
+        AddSilenceGameStateReq(RoomData.D_Hub.DistanceTriggers[2].VoiceLines[1][2])
+        AddSilenceGameStateReq(RoomData.D_Hub.DistanceTriggers[2].VoiceLines[2])
+        AddSilenceGameStateReq(RoomData.D_Hub.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.D_Hub.EnterVoiceLines[2])
+        AddSilenceGameStateReq(RoomData.D_Hub.EnterVoiceLines[3])
+        AddSilenceGameStateReq(RoomData.D_Hub.EnterVoiceLines[4])
+        AddSilenceGameStateReq(RoomData.D_Hub.EnterVoiceLines[5])
+        AddSilenceGameStateReq(RoomData.D_Reprieve01.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.D_Reprieve01.EnterVoiceLines[2])
+        AddSilenceGameStateReq(RoomData.D_Boss01.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.D_Boss01.EnterVoiceLines[2])
+        AddSilenceGameStateReq(RoomData.D_Boss01.EnterVoiceLines[4])
+        AddSilenceGameStateReq(RoomData.D_Boss01.EnterVoiceLines[5])
+        AddSilenceGameStateReq(RoomData.RoomOpening.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.RoomOpening.EnterVoiceLines[3])
+        AddSilenceGameStateReq(RoomData.RoomOpening.EnterVoiceLines[4])
+        AddSilenceGameStateReq(RoomData.A_PostBoss01.EnterVoiceLines[1])
+        AddSilenceGameStateReq(RoomData.A_Shop01.DistanceTriggers[2].VoiceLines)
+        
+--    ZJ_ObstacleData
+        AddSilenceGameStateReq(ObstacleData.ShrinePointDoor.ExitBlockedByShrinePointsVoiceLines[1])
+        
+        
+        
+        
+    end
+    baseFunc()
+end)
