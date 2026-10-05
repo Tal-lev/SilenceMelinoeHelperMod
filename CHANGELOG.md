@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Silence NPCData-Selene
+- Silence ZJ AudioData
+- Silence ZJ RoomData
+- Silence ZJ ObstacleData
+- Silence ZJ ConsumableData
+- Silence ZJ EnemyData
+
 ## [0.9.0] - 2026-09-26
 
 - Silence NPCData (missing a few Crossroads NPC)
