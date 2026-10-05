@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added a check to not accidentally silence non Mel quips.
 - Silence NPCData-Selene
 - Silence ZJ AudioData
 - Silence ZJ RoomData
