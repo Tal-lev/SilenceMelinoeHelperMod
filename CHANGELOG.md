@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Silence NPCData
+- Silence Charon Tip Jar
+- Fix Silence Ashes
+- Fix Silence Cerberus
+
 ## [1.0.0] - 2026-10-05
 
 - Added a check to not accidentally silence non Mel quips.
