@@ -685,6 +685,7 @@ AddSilenceGameStateReq(EncounterData.BossInfestedCerberus01.EnterVoiceLines[2])
 AddSilenceGameStateReq(EncounterData.BossInfestedCerberus01.EnterVoiceLines[3])
 AddSilenceGameStateReq(EncounterData.BossInfestedCerberus01.EnterVoiceLines[4])
 AddSilenceGameStateReq(EncounterData.BossInfestedCerberus01.EnterVoiceLines[5])
+AddSilenceGameStateReq(EncounterData.BossInfestedCerberus01.EnterVoiceLines[6])
 AddSilenceGameStateReq(EncounterData.BossTyphonHead01.PreFightVoiceLines[1])
 AddSilenceGameStateReq(EncounterData.BossTyphonHead01.PreFightVoiceLines[2])
 AddSilenceGameStateReq(EncounterData.BossTyphonHead01.FightStartVoiceLines[1])
@@ -712,10 +713,13 @@ AddSilenceGameStateReq(EncounterData.BaseHubReturn.DistanceTriggers[1].VoiceLine
 AddSilenceGameStateReq(EncounterData.BaseHubReturn.DistanceTriggers[1].VoiceLines[8])
 --EncounterData_Story 
 AddSilenceGameStateReq(EncounterData.Story_Arachne_01.ExitVoiceLines[1])
+AddSilenceGameStateReq(EncounterData.Story_Arachne_01.ExitVoiceLines[2])
 AddSilenceGameStateReq(EncounterData.Story_Arachne_01.DistanceTriggers[1].VoiceLines)
 AddSilenceGameStateReq(EncounterData.Story_Narcissus_01.DistanceTriggers[1].VoiceLines[1])
 AddSilenceGameStateReq(EncounterData.Story_Narcissus_01.DistanceTriggers[1].VoiceLines[2])
 AddSilenceGameStateReq(EncounterData.Story_Echo_01.DistanceTriggers[1].VoiceLines[1])
+AddSilenceGameStateReq(EncounterData.Story_Echo_01.DistanceTriggers[1].VoiceLines[1][1])
+AddSilenceGameStateReq(EncounterData.Story_Echo_01.DistanceTriggers[1].VoiceLines[1][2])
 AddSilenceGameStateReq(EncounterData.Story_Echo_01.DistanceTriggers[2].VoiceLines[1])
 --EncounterData_Unique
 AddSilenceGameStateReq(EncounterData.Shop.ExitVoiceLines[1])
@@ -724,14 +728,19 @@ AddSilenceGameStateReq(EncounterData.Shop.ExitVoiceLines[3])
 AddSilenceGameStateReq(EncounterData.FCastTutorialFight.StartVoiceLines)
 --EncounterData_AutomatonBeamer 
 AddSilenceGameStateReq(EnemyData.AutomatonBeamer.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.AutomatonBeamer_Elite.EnemySightedVoiceLines)
 --EncounterData_AutomatonEnforcer
 AddSilenceGameStateReq(EnemyData.AutomatonEnforcer.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.AutomatonEnforcer_Elite.EnemySightedVoiceLines)
 --EnemyData_Brawler
 AddSilenceGameStateReq(EnemyData.Brawler.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.Brawler_Elite.EnemySightedVoiceLines)
 --EnemyData_BrokenHearted
 AddSilenceGameStateReq(EnemyData.BrokenHearted.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.BrokenHearted_Elite.EnemySightedVoiceLines)
 --EnemyData_Carrion
 AddSilenceGameStateReq(EnemyData.Carrion.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.Carrion_Elite.EnemySightedVoiceLines)
 --EnemyData_Chronos 
 AddSilenceGameStateReq(EnemyData.Chronos.PhaseEndedVoiceLines[1])
 AddSilenceGameStateReq(EnemyData.Chronos.DefeatedVoiceLines[1])
@@ -742,12 +751,15 @@ AddSilenceGameStateReq(GlobalVoiceLines.PostBabalityVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.ClearedBabalityVoiceLines[1])
 --EnemyData_ClockworkHeavyMelee
 AddSilenceGameStateReq(EnemyData.ClockworkHeavyMelee.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.ClockworkHeavyMelee_Elite.EnemySightedVoiceLines)
 --EnemyData_Crawler
 AddSilenceGameStateReq(EnemyData.CrawlerMiniboss.OnKillVoiceLines[3])
 --EnemyData_Dragon
 AddSilenceGameStateReq(EnemyData.Dragon.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.Dragon_Elite.EnemySightedVoiceLines)
 --EnemyData_Drunk
 AddSilenceGameStateReq(EnemyData.Drunk.EnemySightedVoiceLines)
+AddSilenceGameStateReq(EnemyData.Drunk_Elite.EnemySightedVoiceLines)
 --EnemyData_Eagle
 AddSilenceGameStateReq(EnemyData.Eagle.FledVoiceLines)
 --EnemyData_Eris
@@ -1151,7 +1163,37 @@ AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
 --NPCData_Selene
 AddSilenceGameStateReq(GlobalVoiceLines.SeleneSaluteLines[1])
 --NPCData_Skelly --Continue here search /VO/Melinoe
---NPCData --Continue here search /VO/Melinoe
+--NPCData
+AddSilenceGameStateReq(PresetEventArgs.ChronosGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.OdysseusReturnGreeting.VoiceLines[1][1])
+AddSilenceGameStateReq(PresetEventArgs.OdysseusGreeting.VoiceLines[1][1])
+AddSilenceGameStateReq(PresetEventArgs.NemesisRandomEventGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.NemesisRandomEventGreeting.VoiceLines[4])
+AddSilenceGameStateReq(PresetEventArgs.HypnosDreamGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.MedeaHubGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.ArachneHubGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.HermesHubGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.HermesHubGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.ErisGreeting.VoiceLines[1][1][2])
+AddSilenceGameStateReq(PresetEventArgs.IcarusGreeting.VoiceLines[1][2])
+AddSilenceGameStateReq(PresetEventArgs.IcarusGreeting.VoiceLines[1][3])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[2])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[4])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[5][1])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[5][2])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[6][1])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[8][1])
+AddSilenceGameStateReq(PresetEventArgs.CharonGreeting.VoiceLines[9])
+AddSilenceGameStateReq(PresetEventArgs.SeleneGreeting.VoiceLines[1][2])
+AddSilenceGameStateReq(PresetEventArgs.SeleneTrueEndingGreeting.VoiceLines[1][1])
+AddSilenceGameStateReq(PresetEventArgs.NarcissusFieldsGreeting.VoiceLines)
+AddSilenceGameStateReq(PresetEventArgs.ZeusHeraFinalGreeting.VoiceLines[1])
+AddSilenceGameStateReq(PresetEventArgs.DemeterGreeting.VoiceLines[1][1])
+AddSilenceGameStateReq(PresetEventArgs.NyxGreeting.VoiceLines[2])
+AddSilenceGameStateReq(PresetEventArgs.HeraclesConsideringBathing.VoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Nyx_Story_01.InteractVoiceLines[1])
 --ObstacleData
 AddSilenceGameStateReq(ObstacleData.ExitDoor.ExitBlockedVoiceLines[8])
 AddSilenceGameStateReq(ObstacleData.ExitDoor.ExitBlockedVoiceLines[9])
@@ -1285,7 +1327,7 @@ AddSilenceGameStateReq(ResourceData.OreChaosProtoplasm.OnAddVoiceLines[1])
 AddSilenceGameStateReq(ResourceData.MetaCurrency.InventoryVoiceLines)
 AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.InventoryVoiceLines[1])
 AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.OnAddVoiceLines[1])
-AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.OnAddVoiceLines[3])
+AddSilenceGameStateReq(ResourceData.MetaCardPointsCommon.OnAddVoiceLines[2])
 AddSilenceGameStateReq(ResourceData.MemPointsCommon.InventoryVoiceLines)
 AddSilenceGameStateReq(ResourceData.MetaFabric.OnAddVoiceLines[1])
 AddSilenceGameStateReq(ResourceData.CardUpgradePoints.OnAddVoiceLines[1])
@@ -1783,9 +1825,9 @@ modutil.mod.Path.Wrap("DoPatches", function(baseFunc)
 --    ZJ_ObstacleData
         AddSilenceGameStateReq(ObstacleData.ShrinePointDoor.ExitBlockedByShrinePointsVoiceLines[1])
         
-        
-        
-        
+    end
+    if rom.mods['NikkelM-Charons_Tip_Jar'] then
+
     end
     baseFunc()
 end)
