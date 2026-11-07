@@ -908,6 +908,11 @@ AddSilenceGameStateReq(FamiliarData.HoundFamiliar.InteractVoiceLines[2])
 AddSilenceGameStateReq(FamiliarData.PolecatFamiliar.PreAttackVoiceLines)
 AddSilenceGameStateReq(FamiliarData.PolecatFamiliar.InteractVoiceLines[1])
 AddSilenceGameStateReq(FamiliarData.PolecatFamiliar.InteractVoiceLines[2])
+AddSilenceGameStateReq(FamiliarData.CatFamiliar.InteractVoiceLines[1])
+AddSilenceGameStateReq(FamiliarData.CatFamiliar.InteractVoiceLines[2])
+AddSilenceGameStateReq(FamiliarData.FrogFamiliar.InteractVoiceLines[3])
+AddSilenceGameStateReq(FamiliarData.FrogFamiliar.InteractVoiceLines[4])
+--Finish Frinos
 --FamiliarPresentation.lua
 AddSilenceGameStateReq(GlobalVoiceLines.FamiliarFledVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.FamiliarFledVoiceLines[2])
@@ -1030,7 +1035,7 @@ AddSilenceGameStateReq(GlobalVoiceLines.TradedMailboxItemVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.CannotAffordMailboxItemVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.WaitingForMailboxItemVoiceLines[1])
 --MarketData --Continue here search /VO/Melinoe
-AddSilenceGameStateReq()
+--AddSilenceGameStateReq()
 --NPCData_Arachne
 AddSilenceGameStateReq(GlobalVoiceLines.CostumeChangedVoiceLines[2])
 AddSilenceGameStateReq(GlobalVoiceLines.CostumeChangedVoiceLines[3])
@@ -1107,7 +1112,12 @@ AddSilenceGameStateReq(EnemyData.NPC_Heracles_01.EntranceVoiceLines[4])
 --NPCData_Hermes
 AddSilenceGameStateReq(EnemyData.NPC_Hermes_01.InteractVoiceLines[1])
 AddSilenceGameStateReq(GlobalVoiceLines.HermesFirstSpawnVoiceLines[2][2])
---NPCData_Hypnos --Continue here search /VO/Melinoe
+--NPCData_Hypnos
+AddSilenceGameStateReq(EnemyData.NPC_Hypnos_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Hypnos_01.InteractVoiceLines[2])
+AddSilenceGameStateReq(EnemyData.NPC_Hypnos_DreamRun.InteractVoiceLines[1])
+AddSilenceGameStateReq(GlobalVoiceLines.HypnosStandeeSpottedVoiceLines)
+AddSilenceGameStateReq(GlobalVoiceLines.DreamRunStartLines[2])
 --NPCData_Icarus
 AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.InteractVoiceLines[1])
 AddSilenceGameStateReq(EnemyData.NPC_Icarus_01.KillingEnemyVoiceLines[2])
@@ -1162,7 +1172,9 @@ AddSilenceGameStateReq(EnemyData.NPC_Nemesis_01.ExitVoiceLines[5])
 --NPCData_Odysseus --Continue here search /VO/Melinoe
 --NPCData_Selene
 AddSilenceGameStateReq(GlobalVoiceLines.SeleneSaluteLines[1])
---NPCData_Skelly --Continue here search /VO/Melinoe
+--NPCData_Skelly
+AddSilenceGameStateReq(EnemyData.NPC_Skelly_01.InteractVoiceLines[1])
+AddSilenceGameStateReq(EnemyData.NPC_Skelly_01.MissingDistanceTrigger.VoiceLines)
 --NPCData
 AddSilenceGameStateReq(PresetEventArgs.ChronosGreeting.VoiceLines[1])
 AddSilenceGameStateReq(PresetEventArgs.OdysseusReturnGreeting.VoiceLines[1][1])
