@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Silence Charon Tip Jar
 - Silence when Petting Cat/Frog
 - Silence when talking to Hypnos
+- Silence Skelly
 - Fix Silence Ashes
 - Fix Silence Cerberus
 
