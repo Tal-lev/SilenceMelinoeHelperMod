@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-19
+
 - Silence NPCData
 - Silence Charon Tip Jar
 - Silence when Petting Cat/Frog
@@ -40,7 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the mod!
 
-[unreleased]: https://github.com/Tal-lev/SilenceMelinoeHelperMod/compare/1.0.0...HEAD
+[unreleased]: https://github.com/Tal-lev/SilenceMelinoeHelperMod/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/Tal-lev/SilenceMelinoeHelperMod/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/Tal-lev/SilenceMelinoeHelperMod/compare/0.9.0...1.0.0
 [0.9.0]: https://github.com/Tal-lev/SilenceMelinoeHelperMod/compare/0.1.0...0.9.0
 [0.1.0]: https://github.com/Tal-lev/SilenceMelinoeHelperMod/compare/...0.1.0
